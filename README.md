@@ -20,7 +20,7 @@ Scripts para monitorar o status das interfaces (UP/DOWN) e enviar alertas em tem
 
 ### 2. Segurança: Device Mode
 Tutorial essencial para liberar permissões de comandos sensíveis (como `/tool fetch`) em versões recentes do RouterOS.
-- [Guia de ativação do Device Mode](./tutoriais/device-mode-guide.md)
+- [Guia de ativação do Device Mode](https://github.com/soarespaullo/MikroTik/wiki/Device-Mode) 
 
 ### 3. Failover Recursivo
 Configuração de redundância de links utilizando monitoramento por ping em servidores raiz (Google/Cloudflare).
