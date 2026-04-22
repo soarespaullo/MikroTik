@@ -24,7 +24,7 @@ Tutorial essencial para liberar permissões de comandos sensíveis (como `/tool 
 
 ### 3. Failover com Netwatch
 Configuração de redundância de links utilizando monitoramento por ping em servidores raiz (Google/Cloudflare).
-- [**Guia de Failover**](https://github.com/soarespaullo/MikroTik/wiki/Failover-Netwatch)
+- [**Guia de Failover com Netwatch**](https://github.com/soarespaullo/MikroTik/wiki/Failover-Netwatch)
 
 ---
 
