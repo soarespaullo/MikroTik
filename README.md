@@ -16,15 +16,15 @@ Repositório dedicado à documentação, automação e compartilhamento de scrip
 
 ### 1. Monitoramento & Notificações (Telegram Bot)
 Scripts para monitorar o status das interfaces (UP/DOWN) e enviar alertas em tempo real via API do Telegram.
-- [Ver script de notificação PPPoE](./scripts/telegram-notification.rsc)
+- [**Ver script de notificação PPPoE**](./scripts/telegram-notification.rsc)
 
 ### 2. Segurança: Device Mode
 Tutorial essencial para liberar permissões de comandos sensíveis (como `/tool fetch`) em versões recentes do RouterOS.
-- [Guia de ativação do Device Mode](https://github.com/soarespaullo/MikroTik/wiki/Device-Mode) 
+- [**Guia de ativação do Device Mode**](https://github.com/soarespaullo/MikroTik/wiki/Device-Mode) 
 
 ### 3. Failover com Netwatch
 Configuração de redundância de links utilizando monitoramento por ping em servidores raiz (Google/Cloudflare).
-- [Guia de Failover](https://github.com/soarespaullo/MikroTik/wiki/Failover-Netwatch))
+- [**Guia de Failover**](https://github.com/soarespaullo/MikroTik/wiki/Failover-Netwatch)
 
 ---
 
