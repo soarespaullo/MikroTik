@@ -22,9 +22,9 @@ Scripts para monitorar o status das interfaces (UP/DOWN) e enviar alertas em tem
 Tutorial essencial para liberar permissões de comandos sensíveis (como `/tool fetch`) em versões recentes do RouterOS.
 - [Guia de ativação do Device Mode](https://github.com/soarespaullo/MikroTik/wiki/Device-Mode) 
 
-### 3. Failover 
+### 3. Failover com Netwatch
 Configuração de redundância de links utilizando monitoramento por ping em servidores raiz (Google/Cloudflare).
-- [Ver guia de Failover]([./tutoriais/failover-recursivo.md](https://github.com/soarespaullo/MikroTik/wiki/Failover-Netwatch))
+- [Guia de Failover](https://github.com/soarespaullo/MikroTik/wiki/Failover-Netwatch))
 
 ---
 
