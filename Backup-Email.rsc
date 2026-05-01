@@ -1,4 +1,4 @@
-# --- CONFIGURAÇÕES DE TEXTO (Edite apenas aqui) ---
+# --- CONFIGURAÇÕES DE TEXTO ---
 :local sysName [/system identity get name]
 :local msgAssunto ("Backup Automatico - " . $sysName)
 :local msgCorpo "Relatorio de Backup do Concentrador:\n\n"
@@ -6,37 +6,54 @@
 
 # --- VARIÁVEIS DO SISTEMA ---
 :local sysVer [/system resource get version]
+:local sysModel [/system resource get board-name]
 :local sysDate [/system clock get date]
 :local sysTime [/system clock get time]
 :local fileName ($sysName . ".rsc")
 :local mailTo [/tool e-mail get user]
 
-# --- LÓGICA DE BUSCA DE IP (PPPoE ou Rota Default) ---
-:local sysAddr "IP nao identificado"
-:do {
-    :local rawAddr [/ip address get [find interface~"pppoe"] address]
-    :set sysAddr [:pick $rawAddr 0 [:find $rawAddr "/"]]
-} on-error={ 
-    :do {
-        :local defaultGW [/ip route get [find dst-address=0.0.0.0/0] gateway-interface]
-        :local rawAddr [/ip address get [find interface=$defaultGW] address]
-        :set sysAddr [:pick $rawAddr 0 [:find $rawAddr "/"]]
-    } on-error={ :set sysAddr "IP Interno/Nao identificado" }
+# --- TRATAMENTO DO UPTIME (Formato: XXd XX:XX) ---
+:local rawUptime [/system resource get uptime]
+:local uptimeStr [:tostr $rawUptime]
+:local finalUptime ""
+:if ([:find $uptimeStr "w"] > 0) do={
+    :local weeks [:pick $uptimeStr 0 [:find $uptimeStr "w"]]
+    :local days [:pick $uptimeStr ([:find $uptimeStr "w"] + 1) [:find $uptimeStr "d"]]
+    :local rest [:pick $uptimeStr ([:find $uptimeStr "d"] + 1) [:len $uptimeStr]]
+    :set finalUptime (($weeks * 7 + $days) . "d " . [:pick $rest 0 5])
+} else={
+    :set finalUptime [:pick $uptimeStr 0 11]
 }
+
+# --- LÓGICA DE BUSCA DE IP (Universal para v7) ---
+:local sysAddr "Nao identificado"
+:do {
+    # Busca o ID da interface que possui a rota default ativa
+    :local routeID [/ip route find where dst-address=0.0.0.0/0 and active=yes]
+    :local gwInt [/ip route get $routeID gateway]
+    
+    # Se o gateway for um nome de interface (comum em PPPoE)
+    :do {
+        :local rawAddr [/ip address get [find interface=$gwInt] address]
+        :set sysAddr [:pick $rawAddr 0 [:find $rawAddr "/"]]
+    } on-error={
+        # Se falhar (link fixo/dedicado), busca o IP de qualquer interface que não seja Bridge/REDE
+        :local rawAddr [/ip address get [find interface!~"bridge" and interface!~"REDE" and address!~"^192.168."] address]
+        :set sysAddr [:pick ($rawAddr->0) 0 [:find ($rawAddr->0) "/"]]
+    }
+} on-error={ :set sysAddr "Verificar WAN/Rota Default" }
 
 # --- EXECUÇÃO ---
 /log warning "Iniciando Script de Backup."
 
-# Gera o arquivo
 /export terse file=$fileName
 /delay 5
 
-# Montagem dinâmica do corpo do e-mail
-:local corpoFinal ($msgCorpo . "Nome: " . $sysName . "\nEndereco: " . $sysAddr . "\nVersao: " . $sysVer . "\nData: " . $sysDate . " - " . $sysTime . $msgAssinatura)
+# Montagem do corpo do e-mail
+:local corpoFinal ($msgCorpo . "Nome: " . $sysName . "\nModelo: " . $sysModel . "\nEndereco IP: " . $sysAddr . "\nVersao: " . $sysVer . "\nUptime: " . $finalUptime . "\nData: " . $sysDate . " - " . $sysTime . $msgAssinatura)
 
 /log info "Enviando backup por e-mail para: $mailTo"
 
-# Envio do e-mail
 /tool e-mail send file=$fileName to=$mailTo subject=$msgAssunto body=$corpoFinal
 
 /delay 5
