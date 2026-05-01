@@ -1,3 +1,11 @@
+# ------------------------------------------------------------------------------
+# SCRIPT: Bk-Mail
+# DESCRIÇÃO: Backup automatizado com envio por e-mail (.rsc)
+# VERSÃO: 2.5 (Estável)
+# AUTOR: Equipe de Rede - @soarespaullo
+# RECURSOS: IP Dinâmico Universal, Uptime formatado e Identidade Automática
+# ------------------------------------------------------------------------------
+#
 # --- CONFIGURAÇÕES DE TEXTO ---
 :local sysName [/system identity get name]
 :local msgAssunto ("Backup Automatico - " . $sysName)
