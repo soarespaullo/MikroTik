@@ -33,7 +33,7 @@
     :set finalUptime [:pick $uptimeStr 0 11]
 }
 
-# --- LÓGICA DE BUSCA DE IP (Universal para v7) ---
+# --- LÓGICA DE BUSCA DE IP ---
 :local sysAddr "Nao identificado"
 :do {
     # Busca o ID da interface que possui a rota default ativa
