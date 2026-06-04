@@ -4,11 +4,19 @@ on:
   push:
     branches: [ "main" ]
 
+# Permissões necessárias para o GitHub Actions publicar no Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    # Configura a variável de ambiente para usar o Node moderno e evitar os avisos
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -16,19 +24,38 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    # 1. Altere a versão do Ruby para 3.4 (para bater com o seu ambiente local do Arch)
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.4' 
-        bundler-cache: true # Ativa o cache automático para acelerar o build de 11s
+        ruby-version: '3.4'
+        bundler-cache: true
 
-    # 2. Executa a instalação de dependências isolada pelo Bundler
     - name: Install Dependencies
       run: |
         bundle config set --local path 'vendor/bundle'
         bundle install
 
-    # 3. Compila o site do Just the Docs
     - name: Build Website
       run: bundle exec jekyll build
+      env:
+        JEKYLL_ENV: production
+
+    # Garante que o GitHub Actions capture a pasta gerada pelo Jekyll
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./_site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
