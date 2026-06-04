@@ -89,6 +89,9 @@ Você pode baixar o arquivo original ou visualizar:
 <a href="https://raw.githubusercontent.com/soarespaullo/MikroTik/main/scripts/Bk-Mail.rsc" class="btn btn-blue" target="_blank">📥 Baixar Script (.rsc)</a>
 <a href="https://github.com/soarespaullo/MikroTik/blob/main/scripts/Bk-Mail.rsc" class="btn btn-outline" target="_blank">👁️ Visualizar Código no GitHub</a>
 
+
+[**👁️ Visualizar Código no GitHub**]([https://forum.mikrotik.com/](https://github.com/soarespaullo/MikroTik/blob/main/scripts/Bk-Mail.rsc)){: .btn .btn-outline }
+
 ---
 
 ## 📅 5. Agendando o Envio Automático
