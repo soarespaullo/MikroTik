@@ -55,7 +55,8 @@ mermaid:
 # ====================================================
 gh_edit_link: true
 gh_edit_link_text: "Editar esta página no GitHub"
-gh_edit_repository: "https://github.com/soarespaullo/wiki-mikrotik"
+gh_edit_repository: "https://github.com/soarespaullo/MikroTik" # CORRIGIDO: Nome real do repositório
+gh_edit_repository_name: "MikroTik" # ADICIONADO: Nome do projeto para o tema
 gh_edit_branch: "main"
 gh_edit_view_mode: "tree"
 
