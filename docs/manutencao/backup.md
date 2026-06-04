@@ -87,7 +87,7 @@ Este script gera o backup (`.rsc`) e envia por *e-mail* com o status completo: *
 Escolha a forma mais adequada para obter o código-fonte ou inspecionar o arquivo direto no repositório:
 
 [**📥 Baixar Arquivo (.rsc)**](https://raw.githubusercontent.com/soarespaullo/MikroTik/main/scripts/Bk-Mail.rsc){: .btn .btn-blue target="_blank" }
-[**👁️ Inspecionar Código no GitHub**](https://github.com/soarespaullo/MikroTik/blob/main/scripts/Bk-Mail.rsc){: .btn .btn-outline target="_blank" }
+[**👁️ Visualizar Código no GitHub**](https://github.com/soarespaullo/MikroTik/blob/main/scripts/Bk-Mail.rsc){: .btn .btn-outline target="_blank" }
 
 ---
 
