@@ -42,7 +42,7 @@ Rotinas de integridade, diagnósticos e automação para garantir alta disponibi
 
 Para facilitar o dia a dia na operação da rede, utilize os canais oficiais da MikroTik:
 
-* [🌐 **MikroTik Download**](https://mikrotik.com/download){: .btn .btn-outline } — *Winbox, Netinstall e pacotes do RouterOS.*
+* [🌐 **MikroTik Download**](https://mikrotik.com/download){: .btn .btn-blue target="_blank" } — *Winbox, Netinstall e pacotes do RouterOS.*
 * [📚 **Documentação Oficial**](https://help.mikrotik.com/docs/){: .btn .btn-outline } — *Manuais técnicos e referências de comandos da Wiki.*
 * [💬 **Fórum MikroTik**](https://forum.mikrotik.com/){: .btn .btn-outline } — *Discussões da comunidade mundial e soluções de problemas.*
 
