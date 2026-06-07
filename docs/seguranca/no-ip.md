@@ -14,7 +14,7 @@ Este guia descreve como configurar o serviço de `DNS Dinâmico` do **No-IP** no
 
 Antes de configurar o roteador, você deve criar a identidade do seu host.
 
-1.  Acesse o site [**No-IP**](https://www.noip.com) e crie sua conta.
+1.  Acesse o site [**No-IP**](https://www.noip.com){: target="_blank"} e crie sua conta.
 
 2.  Vá em **DDNS e Acesso Remoto/ou Gerenciar DNS** → **DNS Records**.
 
@@ -49,44 +49,14 @@ Como o `MikroTik` não possui um menu nativo para o `No-IP`, utilizamos um `scri
 
     *   `policy`: Necessário para scripts que alteram configurações do sistema.
 
-No campo **Source**, cole o código abaixo:
+No campo **Source**, Obtenha o código fonte através dos botões abaixo e cole neste campo.
 
-```bash
-# Atualizacao automatica do No-IP
+### 📥 Obtenção do Script e Implantação
 
-# Alterar as informacoes desta secao conforme os dados do seu login e host no-ip
-:local noipuser "USUARIO"
-:local noippass "SENHA"
-:local noiphost "HOSTNAME.DDNS.NET"
+Escolha a forma mais adequada para obter o código-fonte ou inspecionar o arquivo direto no repositório:
 
-# Nome da interface que devera ter o endereco IP vinculado ao host do no-ip
-:local inetinterface "pppoe-cliente-proxxima"
-
-:global previousIP
-
-:if ([/interface get $inetinterface value-name=running]) do={
-# Obtendo informacao sobre o IP atual
-   :local currentIP [/ip address get [find interface="$inetinterface" disabled=no] address]
-   :for i from=( [:len $currentIP] - 1) to=0 do={
-       :if ( [:pick $currentIP $i] = "/") do={ 
-           :set currentIP [:pick $currentIP 0 $i]
-       } 
-   }
-
-  :if ($currentIP != $previousIP) do={
-       :log info "No-IP: IP atual $currentIP diferente do IP anterior, atualizando."
-       :set previousIP $currentIP
-
-       # Enviando o novo IP via http
-       :log info "No-IP: Atualizando o host $noiphost"
-       /tool fetch mode=http user=$noipuser password=$noippass url="http://dynupdate.no-ip.com/nic/update\3Fhostname=$noiphost&myip=$currentIP" keep-result=no
-       :log info "No-IP: Host $noiphost atualizado no No-IP = $currentIP"
-   }
-} else={
-   :log info "No-IP: $inetinterface desconectada. Impossivel atualizar No-IP."
-}
-
-```
+[**📥 Baixar Arquivo (.rsc)**](https://raw.githubusercontent.com/soarespaullo/MikroTik/main/scripts/Check-NoIP.rsc){: .btn .btn-blue target="_blank" }
+[**👁️ Visualizar Código no GitHub**](https://github.com/soarespaullo/MikroTik/blob/main/scripts/Check-NoIP.rsc){: .btn .btn-outline target="_blank" }
 
 {: .important }
 > No campo `inetinterface`, certifique-se de digitar o nome exato da sua interface de internet (ex: `pppoe-cliente-proxxima`).
