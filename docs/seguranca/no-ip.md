@@ -14,7 +14,7 @@ Este guia descreve como configurar o serviço de `DNS Dinâmico` do **No-IP** no
 
 Antes de configurar o roteador, você deve criar a identidade do seu host.
 
-1.  Acesse o site [**No-IP**](https://www.noip.com){: target="_blank"} e crie sua conta.
+1.  Acesse o site [**No-IP**](https://www.noip.com){: target="_blank" } e crie sua conta.
 
 2.  Vá em **DDNS e Acesso Remoto/ou Gerenciar DNS** → **DNS Records**.
 

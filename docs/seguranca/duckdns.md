@@ -12,7 +12,7 @@ O **DuckDNS** é um serviço gratuito que permite associar um nome fixo ao seu I
 
 ## 🛠️ 1. Preparação no Portal DuckDNS
 
-1. Acesse o site oficial: [**duckdns.org**](https://www.duckdns.org/).
+1. Acesse o site oficial: [**duckdns.org**](https://www.duckdns.org/){: target="_blank" }.
 
 2. Realize o Login: No topo da página, escolha o provedor de sua preferência para acessar o painel (você pode utilizar sua conta `Google`, `GitHub`, `Twitter/X`, `Reddit` ou `Persona`).
 
@@ -35,45 +35,14 @@ Este script monitora o `IP` e atualiza o servidor apenas se houver mudança, reg
 
 2.  Em **Policies**, marque: `read, write, test, policy`.
 
-3.  No campo **Source**, cole o código abaixo (ajuste as variáveis no início):
+3.  No campo **Source**, Obtenha o código fonte através dos botões abaixo e cole neste campo.
 
-```bash
-# --- Configurações do Usuário ---
-:local duckdomain "rb-mikrotik"
-:local ducktoken "c68lkmnj-29ae-4082-bfed-e7klkqusdfa"
-:local inetinterface "pppoe-cliente-proxxima"
+### 📥 Obtenção do Script e Implantação
 
-# --- Captura do IP Atual ---
-:global actualIP [/ip address get [find where interface=$inetinterface] address];
-:set actualIP [:pick $actualIP 0 [:find $actualIP "/"]];
+Escolha a forma mais adequada para obter o código-fonte ou inspecionar o arquivo direto no repositório:
 
-# --- Criação do arquivo de backup (se não existir) ---
-:if ([:len [/file find where name=ipstore.txt]] < 1 ) do={
- /file print file=ipstore.txt where name=ipstore.txt;
- /delay delay-time=2;
- /file set ipstore.txt contents="0.0.0.0";
-};
-
-# --- Comparação e Atualização ---
-:local previousIP [/file get [find where name=ipstore.txt] contents];
-
-:if ($previousIP != $actualIP) do={
- :log info ("DuckDNS: Tentando atualizar... Novo IP: " . $actualIP . " - Anterior: " . $previousIP);
-
- /tool fetch mode=https keep-result=yes dst-path=duckdns-result.txt address=[:resolve www.duckdns.org] port=443 host=www.duckdns.org src-path=("/update?domains=$duckdomain&token=$ducktoken&ip=".$actualIP);
-
- /delay delay-time=5;
- :local lastChange [/file get [find where name=duckdns-result.txt] contents];
-
- :if ($lastChange = "OK") do={
-    /file set ipstore.txt contents=$actualIP;
-    :log warning ("DuckDNS: Atualizado com sucesso! IP: " . $actualIP);
- } else={
-    :log error ("DuckDNS: Falha na atualizacao com o IP " . $actualIP);
- };
-};
-
-```
+[**📥 Baixar Arquivo (.rsc)**](https://raw.githubusercontent.com/soarespaullo/MikroTik/main/scripts/Check-DuckDNS.rsc){: .btn .btn-blue target="_blank" }
+[**👁️ Visualizar Código no GitHub**](https://github.com/soarespaullo/MikroTik/blob/main/scripts/Check-DuckDNS.rsc){: .btn .btn-outline target="_blank" }
 
 ---
 
