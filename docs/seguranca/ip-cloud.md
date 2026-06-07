@@ -37,9 +37,9 @@ Após clicar em Apply, observe os campos que foram preenchidos:
 
 Ao ativar o Cloud, seu roteador ganha um "nome" na internet. Para sua segurança, certifique-se de:
 
-1.  [**Trocar a senha padrão:**](https://github.com/soarespaullo/MikroTik/wiki/Setup-Inicial#-8-criando-usu%C3%A1rio-de-acesso) Nunca use o usuário `admin` sem senha (conforme fizemos no Guia de Configuração Inicial).
+1.  [**Trocar a senha padrão:**](https://soarespaullo.github.io/MikroTik/docs/primeiro-passos/configuracao-inicial/#-8-criando-usu%C3%A1rio-de-acesso){: target="_blank" } Nunca use o usuário `admin` sem senha (conforme fizemos no Guia de Configuração Inicial).
 
-2.  [**Portas de Serviço:**](https://github.com/soarespaullo/MikroTik/wiki/Service-Hardening) Se você for acessar de fora, lembre-se que as portas padrão (8291 para Winbox) devem estar abertas ou alteradas em **IP → Services**.
+2.  [**Portas de Serviço:**](https://soarespaullo.github.io/MikroTik/docs/seguranca/bloqueio-servicos/){: target="_blank" } Se você for acessar de fora, lembre-se que as portas padrão (8291 para Winbox) devem estar abertas ou alteradas em **IP → Services**.
 
 ---
 

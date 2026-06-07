@@ -75,7 +75,7 @@ Esta é a camada de segurança mais forte. Você pode dizer ao MikroTik que um s
 
 3.  Clique em **OK**.
 
-    -   *Agora, mesmo que alguém descubra sua senha e sua porta, só conseguirá entrar se estiver fisicamente conectado à sua rede local.*
+    *   *Agora, mesmo que alguém descubra sua senha e sua porta, só conseguirá entrar se estiver fisicamente conectado à sua rede local.*
 
 ---
 
@@ -94,4 +94,4 @@ Esta é a camada de segurança mais forte. Você pode dizer ao MikroTik que um s
 ---
 
 {: .important }
-> **Cuidado:** Antes de desativar o serviço **www** ou mudar a porta do **winbox**, certifique-se de que você tem acesso via Winbox funcionando. Se você se trancar para fora, terá que usar o acesso via porta **Console** (se o seu modelo tiver) ou dar um **Reset de Fábrica**.
+> Antes de desativar o serviço **www** ou mudar a porta do **winbox**, certifique-se de que você tem acesso via Winbox funcionando. Se você se trancar para fora, terá que usar o acesso via porta **Console** (se o seu modelo tiver) ou dar um **Reset de Fábrica**.

@@ -31,7 +31,7 @@ Neste exemplo, vamos redirecionar o tráfego HTTPS (porta **443**) para o servid
 {: .important }
 > **Ajuste para Acesso Interno (Aba Extra):** 
 >
-> Se você pretende acessar este servidor usando o **DDNS/IP Público** mesmo estando dentro da rede local, vá na aba **Extra** e defina **Dst. Address Type: local**. Isso é essencial para que o [**Hairpin NAT**](https://github.com/soarespaullo/MikroTik/wiki/Hairpin-NAT) funcione corretamente sem precisar travar a regra em uma interface (`WAN`).
+> Se você pretende acessar este servidor usando o **DDNS/IP Público** mesmo estando dentro da rede local, vá na aba **Extra** e defina **Dst. Address Type: local**. Isso é essencial para que o [**Hairpin NAT**](https://soarespaullo.github.io/MikroTik/docs/seguranca/hairpin-nat/){: target="_blank" } funcione corretamente sem precisar travar a regra em uma interface (`WAN`).
 
 4.  Mude para a aba **Action** e configure o destino:
 
@@ -72,10 +72,10 @@ O MikroTik receberá a conexão na **8443** e fará a entrega silenciosa para a 
 
 1.  Certifique-se de que o serviço no IP `10.220.0.100` está ativo e aceitando conexões na porta `443`.
 
-{: .note } 
+{: .tip } 
 > **Teste de Porta Aberta:** 
 >
-> Acesse o site [**YouGetSignal (Port Forwarding Tester**)](https://www.yougetsignal.com/tools/open-ports/) e:
+> Acesse o site [**YouGetSignal (Port Forwarding Tester**)](https://www.yougetsignal.com/tools/open-ports/){: target="_blank" } e:
 
 *   Verifique se o **Remote Address** é o seu IP público atual.
 
@@ -85,7 +85,7 @@ O MikroTik receberá a conexão na **8443** e fará a entrega silenciosa para a 
 
 Se o resultado for uma **bandeira verde (Port 443 is open)**, seu redirecionamento está funcionando perfeitamente!
 
-2.  Tente acessar pelo seu IP Público (encontrado em [**IP Cloud**](https://github.com/soarespaullo/MikroTik/wiki/Cloud-DDNS)) usando um dispositivo **fora** da sua rede (como o 4G/5G do celular).
+2.  Tente acessar pelo seu IP Público (encontrado em [**IP Cloud**](https://soarespaullo.github.io/MikroTik/docs/seguranca/ip-cloud/){: target="_blank" } usando um dispositivo **fora** da sua rede (como o 4G/5G do celular).
 
 {: .important }
-> Se você tentar acessar pelo IP externo estando conectado na rede local (`Wi-Fi/Cabo da mesma rede`), o acesso pode falhar devido à falta de uma regra de [**Hairpin NAT**](https://github.com/soarespaullo/MikroTik/wiki/Hairpin-NAT). Teste sempre por uma conexão externa.
+> Se você tentar acessar pelo IP externo estando conectado na rede local (`Wi-Fi/Cabo da mesma rede`), o acesso pode falhar devido à falta de uma regra de [**Hairpin NAT**](https://soarespaullo.github.io/MikroTik/docs/seguranca/hairpin-nat/){: target="_blank" }. Teste sempre por uma conexão externa.

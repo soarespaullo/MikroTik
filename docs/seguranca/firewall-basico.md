@@ -5,7 +5,6 @@ parent: "🔒 Segurança & Acesso"
 nav_order: 3
 ---
 
-
 # 🛡️ Guia: Firewall Básico (Proteção do Roteador)
 {: .no_toc }
 
@@ -14,7 +13,6 @@ O Firewall de `input` é responsável por proteger o **próprio roteador** de ac
 ---
 
 ## 🏗️ 1. Aceitar Conexões Estabelecidas ou Relacionadas
-
 
 Esta regra permite que o roteador responda a comunicações que ele mesmo iniciou. Sem ela, nada funciona corretamente.
 
@@ -36,9 +34,8 @@ Esta regra permite que o roteador responda a comunicações que ele mesmo inicio
 
 ## 🔑 2. Aceitar Lista de Suporte (Rede Confiável)
 
-
 {: .note }
-> Esta mesma lista (`rede-suporte`) é utilizada no nosso sistema de [**Port Knocking**](https://github.com/soarespaullo/MikroTik/wiki/Port-Knocking). Isso significa que, seja via rede local ou via batida secreta, o firewall usará esta única regra para permitir o seu acesso, mantendo as configurações organizadas.
+> Esta mesma lista (`rede-suporte`) é utilizada no nosso sistema de [**Port Knocking**](https://soarespaullo.github.io/MikroTik/docs/seguranca/port-knocking/){: target="_blank" }. Isso significa que, seja via rede local ou via batida secreta, o firewall usará esta única regra para permitir o seu acesso, mantendo as configurações organizadas.
 
 Libera acesso total ao roteador para os **IPs** que estão na sua lista de permissão.
 
@@ -57,7 +54,6 @@ Libera acesso total ao roteador para os **IPs** que estão na sua lista de permi
     *   **Aba Action:** `Action: accept`.
 
 {: .note } 
->
 > Em **Address**, você pode colocar o IP específico de um computador ou o bloco da rede toda como fizemos acima.
 
 ---
@@ -88,7 +84,6 @@ Permite que o roteador responda a Pings, mas limita a quantidade para evitar ata
 
 ## 🚫 4. Drop Geral (O Cadeado)
 
-
 Esta regra deve ser **sempre a última**. Ela bloqueia qualquer tentativa de conexão que não se encaixou nas regras acima (como acessos vindos da Internet/WAN).
 
 1.  **Aba General:**
@@ -114,5 +109,4 @@ No MikroTik, a ordem dos fatores altera o produto! O firewall lê as regras de c
 4.  `drop input` (Fundo)
 
 {: .important }
->
 > Se você colocar a regra de **Drop** acima da regra de **Rede Suporte**, você perderá o acesso ao Winbox imediatamente e precisará de acesso físico ao roteador.
