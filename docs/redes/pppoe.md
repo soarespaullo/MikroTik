@@ -14,7 +14,8 @@ O protocolo **PPPoE** (Point-to-Point Protocol over Ethernet) é o padrão mais 
 
 ## 📥 1. PPPoE Client (Receber Internet)
 
-> Use este método se você tem um link de internet que exige usuário e senha.
+Use este método se você tem um link de internet que exige usuário e senha.
+{: .label .label-yellow }
 
 ### Passo a Passo (Winbox):
 
@@ -31,13 +32,15 @@ O protocolo **PPPoE** (Point-to-Point Protocol over Ethernet) é o padrão mais 
     * **Add Default Route:** Marque para o roteador criar a rota de internet automaticamente.
 5. Clique em **OK**.
 
-**Verificação:** Se aparecer um **"R"** (Running) ao lado do nome, a conexão foi estabelecida com sucesso.
+{: .warning }
+> **Verificação:** Se aparecer um **"R"** (Running) ao lado do nome, a conexão foi estabelecida com sucesso.
 
 ---
 
 ## 📤 2. PPPoE Server (Distribuir Internet)
 
-> Use este método se você quer criar usuários e senhas para quem se conecta ao seu MikroTik.
+Use este método se você quer criar usuários e senhas para quem se conecta ao seu MikroTik.
+{: .label .label-yellow }
 
 ### Passo 1: Criar o Pool de IPs
 1. Vá em **IP** → **Pool**. Clique em **+**.
