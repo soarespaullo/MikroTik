@@ -70,6 +70,5 @@ Para evitar perder o histórico após uma queda de energia:
 
 4. Em **Rules**, altere a `Action` do tópico desejado de `memory` para `disk`.
 
-{: .note }
->
+{: .tip }
 > Ao criar scripts, use o comando `:log info "TEXTO"` ou `:log error "TEXTO"`. Isso facilita muito a filtragem na Wiki ou no Terminal para saber se sua automação está funcionando corretamente.
