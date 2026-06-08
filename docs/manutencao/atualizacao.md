@@ -67,7 +67,7 @@ Muitos administradores esquecem este passo. Ele atualiza o chip da placa-mãe do
 
 Se o roteador não tiver acesso à internet, você pode atualizar manualmente:
 
-1.  Baixe o arquivo `.npk` correspondente à arquitetura do seu roteador (ex: `arm64`, `mmips`, `mipsbe`) no site oficial [**mikrotik.com/download**](https://mikrotik.com/download).
+1.  Baixe o arquivo `.npk` correspondente à arquitetura do seu roteador (ex: `arm64`, `mmips`, `mipsbe`) no site oficial [**mikrotik.com/download**](https://mikrotik.com/download){: target="_blank" }.
 
 2.  Abra o Winbox e vá em **Files**.
 
@@ -77,11 +77,10 @@ Se o roteador não tiver acesso à internet, você pode atualizar manualmente:
 
 ---
 
-✅ 5. Verificação Final
-----------------------
+## ✅ 5. Verificação Final
 
 Após os reboots, verifique:
 
--   Em **System → Resources**: Se a versão do RouterOS está correta.
+*   Em **System → Resources**: Se a versão do RouterOS está correta.
 
--   Em **System → RouterBOARD**: Se o *Current Firmware* agora iguala o *Upgrade Firmware*.
+*   Em **System → RouterBOARD**: Se o *Current Firmware* agora iguala o *Upgrade Firmware*.
