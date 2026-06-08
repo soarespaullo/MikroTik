@@ -88,5 +88,5 @@ Para que o `MikroTik` verifique e atualize o IP automaticamente, precisamos cria
     *   `policy`: (para permitir a execução do script agendado)
 
 
-{: .note }
+{: .warning }
 > **Atenção ao CGNAT!** Se o IP da sua interface PPPoE começar com `100.64.x.x`, o acesso remoto via DDNS comum não funcionará, pois você não possui um IP público real. Nesse caso, será necessário utilizar um serviço de Tunneling (como ZeroTier ou Tailscale) ou solicitar um IP público à operadora.
