@@ -75,7 +75,7 @@ Para fechar a segurança, você deve restringir quem pode tentar login via Ender
 
 ---
 
-{: .note }
+{: .tip }
 > **Por que usamos Interface List?**
 >
 > Se no futuro você criar uma rede Wi-Fi separada ou uma nova VLAN e quiser que o MikroTik também apareça nela, você não mexe mais no menu *Neighbor*. Você apenas adiciona essa nova interface dentro da `LISTA-SEGURA` e pronto: as regras de Neighbor, MAC-Server e até de Firewall (se você as configurar assim) já estarão valendo automaticamente.
