@@ -5,6 +5,7 @@ nav_order: 2
 has_toc: true
 mermaid: true
 has_children: true
+nav_exclude: true
 ---
 
 # 🛠️ Recursos Disponíveis na Wiki
