@@ -65,5 +65,5 @@ Por padrão, o MikroTik roteia o tráfego entre VLANs. Se você quer que a rede 
 
 ---
 
-{: .note }
+{: .tip }
 > Se você for passar várias VLANs para um Switch ou AP através de um único cabo, lembre-se de configurar esse cabo como **Trunk** no dispositivo de destino, usando o mesmo **VLAN ID**.
