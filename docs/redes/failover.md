@@ -48,7 +48,7 @@ Para que o Failover funcione, o MikroTik não deve gerenciar as rotas sozinho. P
 
 Esta rota força o MikroTik a testar o IP de destino exclusivamente através do link principal, evitando que o ping saia pelo link de backup e gere um "falso positivo".
 
-1. Acesse **IP → Routes** e clique em `+`.
+1. Acesse **IP → Routes** e clique em **+**.
 2. **Dst. Address:** `202.12.27.33` (IP de um Root Server).
 3. **Gateway:** `pppoe-cliente-proxxima`.
 4. Clique em **Comment** e digite: `ROTA PARA MONITORAMENTO PROXXIMA`.
@@ -62,7 +62,7 @@ O Netwatch monitora o `IP` externo e desativa a rota principal se o ping falhar.
 
 Para um monitoramento preciso, recomendamos utilizar os `IPs` dos **Root Servers** (`servidores raiz da internet`), que garantem alta disponibilidade para o teste de conectividade.
 
-{: .note }
+{: .tip }
 > Você pode consultar a lista completa de **IPs dos Root Servers (de A a M)** no site oficial da [IANA](https://iana.org/domains/root/servers){: .btn .btn-purple target="_blank" }.
 
 1. Acesse **Tools → Netwatch** e clique em **+**.
@@ -103,7 +103,7 @@ Certifique-se de que existam as duas regras de saída em IP → Firewall → NAT
 
    * A rota `LINK UNITELL BKP` assumirá o status **AS** (Active Static) imediatamente.
 
-{: .note }
+{: .tip }
 > **Por que usar Comentários?**
 >
 > O `Netwatch` utiliza o comentário `LINK PROXXIMA` para identificar qual rota ele deve ligar ou desligar. O nome no comentário deve ser idêntico ao comando inserido no Netwatch.
