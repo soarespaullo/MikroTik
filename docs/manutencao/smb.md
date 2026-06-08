@@ -39,7 +39,6 @@ Antes de usar um **MicroSD** ou **Pendrive**, ele precisa ser formatado no siste
 4.  Clique no botão `Start`e aguarde concluir a formatação.
 
 {: .important }
->
 > A formatação apagará todos os dados contidos no `cartão` ou `pendrive`. Certifique-se de selecionar o disco correto antes de clicar em Format.
 
 ---
@@ -117,7 +116,7 @@ Agora, ative o servidor para que ele fique visível na rede.
 
 2.  Na barra de endereços, digite o IP do seu MikroTik: `\\10.220.0.1`.
 
-3.  Insira o usuário e senha criados no [**Passo 2**](https://github.com/soarespaullo/MikroTik/wiki/SMB-Storage#-2-criando-usu%C3%A1rios-de-acesso).
+3.  Insira o usuário e senha criados no [**Passo 2**](https://soarespaullo.github.io/MikroTik/docs/manutencao/smb/#-2-criando-usu%C3%A1rios-de-acesso).
 
 ### No Linux (Interface Gráfica - GNOME/KDE):
 
@@ -127,7 +126,7 @@ Agora, ative o servidor para que ele fique visível na rede.
 
 3.  No campo de endereço, utilize o prefixo `smb://`:
 
-    -   `smb://10.220.0.1`
+    *   `smb://10.220.0.1`
 
 4.  O sistema solicitará o usuário, o domínio (`WORKGROUP`) e a senha.
 
@@ -169,7 +168,7 @@ Este método é o mais direto para arquivos pequenos ou técnicos do sistema.
 
 ### B. Via Rede (SMB) - Ideal para Backups de PCs
 
-Como você já configurou o [**Passo 5**](https://github.com/soarespaullo/MikroTik/wiki/SMB-Storage#-5-como-acessar-os-arquivos), este é o método mais fácil para o dia a dia.
+Como você já configurou o [**Passo 5**](https://soarespaullo.github.io/MikroTik/docs/manutencao/smb/#-5-como-acessar-os-arquivos), este é o método mais fácil para o dia a dia.
 
 1.  Acesse a pasta mapeada no seu `Windows` ou `Linux`.
 
@@ -177,7 +176,7 @@ Como você já configurou o [**Passo 5**](https://github.com/soarespaullo/MikroT
 
 ---
 
-{: .note }
+{: .tip }
 > **Dica de Organização (Subpastas)**
 >
 > Para não virar uma bagunça, você pode criar pastas dentro do disco pelo terminal do Winbox:
