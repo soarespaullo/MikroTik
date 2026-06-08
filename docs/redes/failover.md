@@ -71,11 +71,9 @@ Para um monitoramento preciso, recomendamos utilizar os `IPs` dos **Root Servers
     *   **Type:** `icmp`
     *   **Interval:** `00:00:15`
 3. Na aba **Down** (Ação ao cair):
-
 ```routeros
 /ip route disable [find comment="LINK PROXXIMA"]
 ```
-
 4. Na aba **Up** (Ação ao voltar):
 ```routeros
 /ip route enable [find comment="LINK PROXXIMA"]
