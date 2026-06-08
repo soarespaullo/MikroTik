@@ -20,7 +20,7 @@ Ao ligar o MikroTik pela primeira vez, um pop-up aparecerá. Clique sempre em **
 > Se você esqueceu de clicar ou o roteador já veio configurado, faça o reset manual:
 > 1. Vá em **System** → **Reset Configuration**.
 > 2. Marque a opção **No Default Configuration**.
-> 3. Clique em **Reset Configuration**. Isso garante que o roteador esteja 100% "limpo".
+> 3. Clique em **Reset Configuration**. Isso garante que o roteador esteja *100%* "limpo".
 
 ---
 
@@ -51,7 +51,7 @@ Antes de configurar a rede, identifique o seu equipamento e as portas físicas.
    * **DNS Servers**: `8.8.8.8` e `1.1.1.1`.
    * **Lease Time**: `00:30:00`.
 
-{: .note }
+{: .tip }
 > O **Lease Time** (`30 minutos`) é o tempo que o `IP` fica reservado para o dispositivo. Em redes com muita rotatividade, tempos curtos são melhores; em redes fixas, você pode aumentar para `08:00:00` (`8 horas`).
 >
 > **Addresses to Give Out**. Caso você precise reservar `IPs` para equipamentos fixos (como `Servidores`, `Impressoras` ou `DVRs`), ajuste o range para iniciar em um número mais alto, por exemplo: `10.220.0.100-10.220.0.254`.
@@ -98,7 +98,7 @@ Dependendo do seu provedor, a conexão será feita via **PPPoE** (`Usuário e Se
 Para que os dispositivos da rede interna consigam navegar, precisamos de duas coisas:
 
 1. **DNS do Sistema:** Vá em **IP** → **DNS** → **Servers** → **+**. E adicione `8.8.8.8` e `1.1.1.1`.
-2. **Regra de NAT (Masquerade):** A regra de `NAT` "*esconde*" os `IPs` da sua rede local atrás do `IP público` do link. Crie a regra de acordo com a sua conexão (ou ambas, se for usar [**Failover**](#)):
+2. **Regra de NAT (Masquerade):** A regra de `NAT` "*esconde*" os `IPs` da sua rede local atrás do `IP público` do link. Crie a regra de acordo com a sua conexão (ou ambas, se for usar [**Failover**](https://soarespaullo.github.io/MikroTik/docs/redes/failover/){: target="_blank" }):
 
 **Para Link PPPoE:**
 
@@ -207,7 +207,7 @@ O MikroTik vem com várias "`portas`" abertas por padrão que você não vai usa
 
 ## ⏰ 10. Ajuste de Horário (NTP)
 
-Para que os logs, agendamentos e scripts funcionem corretamente, o roteador precisa manter a hora sincronizada. Utilizamos os servidores oficiais do projeto [**NTP.br**](https://ntp.br/).
+Para que os logs, agendamentos e scripts funcionem corretamente, o roteador precisa manter a hora sincronizada. Utilizamos os servidores oficiais do projeto [**NTP.br**](https://ntp.br/){: target="_blank" }.
 
 1. Vá em **System** → **NTP Client**.
 2. Marque a caixa `Enabled`.
