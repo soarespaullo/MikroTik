@@ -34,7 +34,7 @@ Esta regra permite que o roteador responda a comunicações que ele mesmo inicio
 
 ## 🔑 2. Aceitar Lista de Suporte (Rede Confiável)
 
-{: .note }
+{: .warning }
 > Esta mesma lista (`rede-suporte`) é utilizada no nosso sistema de [**Port Knocking**](https://soarespaullo.github.io/MikroTik/docs/seguranca/port-knocking/){: target="_blank" }. Isso significa que, seja via rede local ou via batida secreta, o firewall usará esta única regra para permitir o seu acesso, mantendo as configurações organizadas.
 
 Libera acesso total ao roteador para os **IPs** que estão na sua lista de permissão.
