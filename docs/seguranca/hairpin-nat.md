@@ -9,6 +9,7 @@ nav_order: 8
 {: .no_toc }
 
 #### O Problema
+{: .label .label-yellow }
 
 Quando você tenta acessar o seu **IP Externo** (ou **DDNS**) estando dentro da rede local, o pacote chega ao roteador, mas "**se perde**" na hora de voltar para o seu computador, fazendo a conexão falhar. O `Hairpin NAT` corrige esse redirecionamento interno.
 
