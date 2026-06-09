@@ -3,6 +3,7 @@ layout: default
 title: "🚪 Port Forwarding (Redirecionamento)"
 parent: "🔒 Segurança & Acesso"
 nav_order: 5
+last_modified_date: 2026-06-09 17:40
 ---
 
 # 📖 Guia: Port Forwarding (Redirecionamento de Portas)

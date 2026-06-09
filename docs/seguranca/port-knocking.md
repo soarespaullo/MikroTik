@@ -3,6 +3,7 @@ layout: default
 title: "🚪 Port Knocking (Acesso Seguro)"
 parent: "🔒 Segurança & Acesso"
 nav_order: 7
+last_modified_date: 2026-06-10 21:40
 ---
 
 # 🚪 Guia: Port Knocking (Acesso Seguro)
