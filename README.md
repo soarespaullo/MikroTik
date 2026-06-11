@@ -7,7 +7,7 @@
 
 Este repositório centraliza a documentação, rotinas de automação e scripts para dispositivos MikroTik (**RouterOS v7**). Todo o conteúdo deste repositório é compilado automaticamente em uma Wiki interativa utilizando **Jekyll** e o tema **Just the Docs**.
 
-🌐 **Acesse a Wiki Oficial:** [https://soarespaullo.github.io/MikroTik](https://soarespaullo.github.io/mikrotik-temp)
+🌐 **Acesse a Wiki Oficial:** [https://soarespaullo.github.io/mikrotik](https://soarespaullo.github.io/mikrotik)
 
 ---
 
@@ -38,5 +38,7 @@ Se você quiser clonar este repositório para testar modificações no layout ou
 
 1. **Requisitos Prévios:** Certifique-se de ter o Ruby e o Bundler instalados no sistema.
 2. **Instalar Dependências:**
-   ```bash
-   bundle install
+
+```bash
+bundle install
+```
