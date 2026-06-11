@@ -3,6 +3,7 @@ layout: default
 title: 🤖 Bot Telegram
 parent: ⚡ Automação
 nav_order: 1
+last_modified_date: 2026-06-10 21:15
 ---
 
 # 🤖 Guia: Configuração do Bot no Telegram

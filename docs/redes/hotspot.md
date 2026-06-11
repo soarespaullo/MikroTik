@@ -3,6 +3,7 @@ layout: default
 title: 📡 Hotspot
 parent: 📡 Redes & Links
 nav_order: 5
+last_modified_date: 2026-06-11 23:35
 ---
 
 # 📡 Guia: Configuração de Hotspot

@@ -3,6 +3,7 @@ layout: default
 title: 🚦 Controle de Banda (Queues)
 parent: 📡 Redes & Links
 nav_order: 4
+last_modified_date: 2026-06-10 21:15
 ---
 
 # 🚦 Guia: Controle de Banda (Queues)

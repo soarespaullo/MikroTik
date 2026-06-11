@@ -3,6 +3,7 @@ layout: default
 title: ⚖️ Load Balance
 parent: 📡 Redes & Links
 nav_order: 3
+last_modified_date: 2026-06-14 23:35
 ---
 
 # ⚖️ Guia: Load Balance PCC (Soma de Links)

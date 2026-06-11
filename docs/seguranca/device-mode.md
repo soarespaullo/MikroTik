@@ -3,6 +3,7 @@ layout: default
 title: 🔑 Device Mode
 parent: 🔒 Segurança & Acesso
 nav_order: 2
+last_modified_date: 2026-06-08 23:25
 ---
 
 # 🔑 Guia: Ativação do Device Mode

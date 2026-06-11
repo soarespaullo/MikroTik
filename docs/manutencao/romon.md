@@ -3,6 +3,7 @@ layout: default
 title: "🕵️ RoMON (Acesso Indireto)"
 parent: "🛠️ Manutenção"
 nav_order: 7
+last_modified_date: 2026-06-08 18:25
 ---
 
 # 🕵️ Guia: Gerenciamento via RoMON

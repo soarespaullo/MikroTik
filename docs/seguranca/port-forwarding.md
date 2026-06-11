@@ -32,7 +32,7 @@ Neste exemplo, vamos redirecionar o tráfego HTTPS (porta **443**) para o servid
 {: .important }
 > **Ajuste para Acesso Interno (Aba Extra):** 
 >
-> Se você pretende acessar este servidor usando o **DDNS/IP Público** mesmo estando dentro da rede local, vá na aba **Extra** e defina **Dst. Address Type: local**. Isso é essencial para que o [**Hairpin NAT**](https://soarespaullo.github.io/MikroTik/docs/seguranca/hairpin-nat/){: target="_blank" } funcione corretamente sem precisar travar a regra em uma interface (`WAN`).
+> Se você pretende acessar este servidor usando o **DDNS/IP Público** mesmo estando dentro da rede local, vá na aba **Extra** e defina **Dst. Address Type: local**. Isso é essencial para que o [**Hairpin NAT**](https://soarespaullo.github.io/mikrotik/docs/seguranca/hairpin-nat/){: target="_blank" } funcione corretamente sem precisar travar a regra em uma interface (`WAN`).
 
 4.  Mude para a aba **Action** e configure o destino:
 
@@ -86,7 +86,7 @@ O MikroTik receberá a conexão na **8443** e fará a entrega silenciosa para a 
 
 Se o resultado for uma **bandeira verde (Port 443 is open)**, seu redirecionamento está funcionando perfeitamente!
 
-2.  Tente acessar pelo seu IP Público (encontrado em [**IP Cloud**](https://soarespaullo.github.io/MikroTik/docs/seguranca/ip-cloud/){: target="_blank" } usando um dispositivo **fora** da sua rede (como o 4G/5G do celular).
+2.  Tente acessar pelo seu IP Público (encontrado em [**IP Cloud**](https://soarespaullo.github.io/mikrotik/docs/seguranca/ip-cloud/){: target="_blank" } usando um dispositivo **fora** da sua rede (como o 4G/5G do celular).
 
 {: .important }
-> Se você tentar acessar pelo IP externo estando conectado na rede local (`Wi-Fi/Cabo da mesma rede`), o acesso pode falhar devido à falta de uma regra de [**Hairpin NAT**](https://soarespaullo.github.io/MikroTik/docs/seguranca/hairpin-nat/){: target="_blank" }. Teste sempre por uma conexão externa.
+> Se você tentar acessar pelo IP externo estando conectado na rede local (`Wi-Fi/Cabo da mesma rede`), o acesso pode falhar devido à falta de uma regra de [**Hairpin NAT**](https://soarespaullo.github.io/mikrotik/docs/seguranca/hairpin-nat/){: target="_blank" }. Teste sempre por uma conexão externa.

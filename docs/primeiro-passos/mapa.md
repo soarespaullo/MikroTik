@@ -3,6 +3,7 @@ layout: default
 title: 🗺️ Mapa de Fluxo
 nav_order: 3
 parent: 🚀 Primeiros Passos
+last_modified_date: 2026-06-10 23:08
 ---
 
 # 🗺️ Mapa de Fluxo da Configuração Inicial

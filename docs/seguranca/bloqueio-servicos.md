@@ -3,6 +3,7 @@ layout: default
 title: "🚫 Bloqueio de Serviços"
 parent: "🔒 Segurança & Acesso"
 nav_order: 4
+last_modified_date: 2026-06-12 23:45
 ---
 
 # 🚫 Guia: Gerenciamento de Serviços (Segurança)

@@ -3,6 +3,7 @@ layout: default
 title: "🦆 DNS Dinâmico (DuckDNS)"
 parent: "🔒 Segurança & Acesso"
 nav_order: 11
+last_modified_date: 2026-06-12 23:13
 ---
 
 # 🦆 Guia: DNS Dinâmico com DuckDNS
@@ -41,8 +42,8 @@ Este script monitora o `IP` e atualiza o servidor apenas se houver mudança, reg
 
 Escolha a forma mais adequada para obter o código-fonte ou inspecionar o arquivo direto no repositório:
 
-[**📥 Baixar Arquivo (.rsc)**](https://raw.githubusercontent.com/soarespaullo/MikroTik/main/scripts/Check-DuckDNS.rsc){: .btn .btn-blue target="_blank" }
-[**👁️ Visualizar Código no GitHub**](https://github.com/soarespaullo/MikroTik/blob/main/scripts/Check-DuckDNS.rsc){: .btn .btn-outline target="_blank" }
+[**📥 Baixar Arquivo (.rsc)**](https://raw.githubusercontent.com/soarespaullo/mikrotik/main/scripts/Check-DuckDNS.rsc){: .btn .btn-blue target="_blank" }
+[**👁️ Visualizar Código no GitHub**](https://github.com/soarespaullo/mikrotik/blob/main/scripts/Check-DuckDNS.rsc){: .btn .btn-outline target="_blank" }
 
 ---
 

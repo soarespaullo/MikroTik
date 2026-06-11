@@ -14,7 +14,7 @@ Este guia aborda os passos fundamentais para tirar um MikroTik da caixa, limpar 
 ---
 
 {: .note }
-> **Dica de Navegação:** Criamos um [**Mapa de Fluxo Visual da Configuração**](https://soarespaullo.github.io/MikroTik/docs/primeiro-passos/mapa/) para ajudar a acompanhar a ordem cronológica dos passos em uma tela separada.
+> **Dica de Navegação:** Criamos um [**Mapa de Fluxo Visual da Configuração**](https://soarespaullo.github.io/mikrotik/docs/primeiro-passos/mapa/) para ajudar a acompanhar a ordem cronológica dos passos em uma tela separada.
 
 ---
 
@@ -79,7 +79,7 @@ Dependendo do seu provedor, a conexão será feita via **PPPoE** (`Usuário e Se
 * **Interface:** `ether1-link-proxxima`.
 3. **Aba Dial Out:** Insira o **User** e **Password** fornecidos pelo seu provedor de internet.
 4. Marque **Add Default Route**.
-4. Garanta que **Add Default Route** esteja marcado (ou deixe `desmarcado` se você estiver configurando o [**Failover**](https://soarespaullo.github.io/MikroTik/docs/redes/failover/){: target="_blank" }) manualmente).
+4. Garanta que **Add Default Route** esteja marcado (ou deixe `desmarcado` se você estiver configurando o [**Failover**](https://soarespaullo.github.io/mikrotik/docs/redes/failover/){: target="_blank" }) manualmente).
 
 {: .note }
 > Verifique se o **Status** na parte inferior da janela mostra `connected`.
@@ -91,7 +91,7 @@ Dependendo do seu provedor, a conexão será feita via **PPPoE** (`Usuário e Se
 2. Clique no botão **+**.
 3. Na aba **DHCP:**
 * **Interface:** Escolha a interface física onde o cabo do provedor está conectado (ex: `ether1-link-proxxima-dhcp`).
-* **Add Default Route:** Garanta que esteja marcado como `yes` (ou `no` se você estiver configurando o [**Failover**](https://soarespaullo.github.io/MikroTik/docs/redes/failover/){: target="_blank" }) manualmente).
+* **Add Default Route:** Garanta que esteja marcado como `yes` (ou `no` se você estiver configurando o [**Failover**](https://soarespaullo.github.io/mikrotik/docs/redes/failover/){: target="_blank" }) manualmente).
 4. Clique em **Apply** e **OK**.
 
 {: .note }
@@ -104,7 +104,7 @@ Dependendo do seu provedor, a conexão será feita via **PPPoE** (`Usuário e Se
 Para que os dispositivos da rede interna consigam navegar, precisamos de duas coisas:
 
 1. **DNS do Sistema:** Vá em **IP** → **DNS** → **Servers** → **+**. E adicione `8.8.8.8` e `1.1.1.1`.
-2. **Regra de NAT (Masquerade):** A regra de `NAT` "*esconde*" os `IPs` da sua rede local atrás do `IP público` do link. Crie a regra de acordo com a sua conexão (ou ambas, se for usar [**Failover**](https://soarespaullo.github.io/MikroTik/docs/redes/failover/){: target="_blank" }):
+2. **Regra de NAT (Masquerade):** A regra de `NAT` "*esconde*" os `IPs` da sua rede local atrás do `IP público` do link. Crie a regra de acordo com a sua conexão (ou ambas, se for usar [**Failover**](https://soarespaullo.github.io/mikrotik/docs/redes/failover/){: target="_blank" }):
 
 **Para Link PPPoE:**
 

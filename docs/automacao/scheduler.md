@@ -3,6 +3,7 @@ layout: default
 title: 🕒 Agendamentos (Scheduler)
 parent: ⚡ Automação
 nav_order: 2
+last_modified_date: 2026-06-11 23:15
 ---
 
 # 🕒 Guia: Agendamentos Automáticos (Scheduler)

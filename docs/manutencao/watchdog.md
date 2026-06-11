@@ -3,6 +3,7 @@ layout: default
 title: "🐕 Watchdog (Auto-Reboot)"
 parent: "🛠️ Manutenção"
 nav_order: 9
+last_modified_date: 2026-06-14 15:15
 ---
 
 # 🐕 Guia: Watchdog (Auto-Reboot)

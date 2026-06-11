@@ -3,6 +3,7 @@ layout: default
 title: "🌐 DNS Dinâmico (No-IP)"
 parent: "🔒 Segurança & Acesso"
 nav_order: 10
+last_modified_date: 2026-06-08 23:16
 ---
 
 # 🌐 Guia: DNS Dinâmico com No-IP (Acesso Remoto)
@@ -55,8 +56,8 @@ No campo **Source**, Obtenha o código fonte através dos botões abaixo e cole 
 
 Escolha a forma mais adequada para obter o código-fonte ou inspecionar o arquivo direto no repositório:
 
-[**📥 Baixar Arquivo (.rsc)**](https://raw.githubusercontent.com/soarespaullo/MikroTik/main/scripts/Check-NoIP.rsc){: .btn .btn-blue target="_blank" }
-[**👁️ Visualizar Código no GitHub**](https://github.com/soarespaullo/MikroTik/blob/main/scripts/Check-NoIP.rsc){: .btn .btn-outline target="_blank" }
+[**📥 Baixar Arquivo (.rsc)**](https://raw.githubusercontent.com/soarespaullo/mikrotik/main/scripts/Check-NoIP.rsc){: .btn .btn-blue target="_blank" }
+[**👁️ Visualizar Código no GitHub**](https://github.com/soarespaullo/mikrotik/blob/main/scripts/Check-NoIP.rsc){: .btn .btn-outline target="_blank" }
 
 {: .important }
 > No campo `inetinterface`, certifique-se de digitar o nome exato da sua interface de internet (ex: `pppoe-cliente-proxxima`).

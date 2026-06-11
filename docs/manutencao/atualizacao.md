@@ -3,6 +3,7 @@ layout: default
 title: "🆙 Atualização do Sistema"
 parent: "🛠️ Manutenção"
 nav_order: 5
+last_modified_date: 2026-06-12 20:25
 ---
 
 # 🆙 Guia: Atualização do Sistema (RouterOS & Firmware)

@@ -117,7 +117,7 @@ Agora, ative o servidor para que ele fique visível na rede.
 
 2.  Na barra de endereços, digite o IP do seu MikroTik: `\\10.220.0.1`.
 
-3.  Insira o usuário e senha criados no [**Passo 2**](https://soarespaullo.github.io/MikroTik/docs/manutencao/smb/#-2-criando-usu%C3%A1rios-de-acesso).
+3.  Insira o usuário e senha criados no [**Passo 2**](https://soarespaullo.github.io/mikrotik/docs/manutencao/smb/#-2-criando-usu%C3%A1rios-de-acesso).
 
 ### No Linux (Interface Gráfica - GNOME/KDE):
 
@@ -169,7 +169,7 @@ Este método é o mais direto para arquivos pequenos ou técnicos do sistema.
 
 ### B. Via Rede (SMB) - Ideal para Backups de PCs
 
-Como você já configurou o [**Passo 5**](https://soarespaullo.github.io/MikroTik/docs/manutencao/smb/#-5-como-acessar-os-arquivos), este é o método mais fácil para o dia a dia.
+Como você já configurou o [**Passo 5**](https://soarespaullo.github.io/mikrotik/docs/manutencao/smb/#-5-como-acessar-os-arquivos), este é o método mais fácil para o dia a dia.
 
 1.  Acesse a pasta mapeada no seu `Windows` ou `Linux`.
 

@@ -3,6 +3,7 @@ layout: default
 title: "📈 Bandwidth Test"
 parent: "🛠️ Manutenção"
 nav_order: 3
+last_modified_date: 2026-06-15 23:35
 ---
 
 # 📈 Guia: Bandwidth Test (BTest)
@@ -51,14 +52,14 @@ No roteador de origem, vá em: **Tools → Bandwidth Test**.
 
 Se você prefere o terminal, pode rodar um teste rápido assim:
 
-```
+```bash
 /tool bandwidth-test address=192.168.88.1 protocol=udp direction=receive
 ```
 
 ## 🔍 Quando usar o Bandwidth Test?
 
-- **Testar Cabos:** Verificar se um cabo está passando 100Mbps ou 1Gbps.
+* **Testar Cabos:** Verificar se um cabo está passando 100Mbps ou 1Gbps.
 
-- **Alinhamento de Antenas:** Verificar o tráfego real em enlaces sem fio (PTP).
+* **Alinhamento de Antenas:** Verificar o tráfego real em enlaces sem fio (PTP).
 
-- **Validar VPNs:** Testar quanto de banda passa por dentro de um túnel (L2TP, WireGuard, etc).
+* **Validar VPNs:** Testar quanto de banda passa por dentro de um túnel (L2TP, WireGuard, etc).

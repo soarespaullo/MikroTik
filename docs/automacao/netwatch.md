@@ -3,6 +3,7 @@ layout: default
 title: 📡 Netwatch
 parent: ⚡ Automação
 nav_order: 3
+last_modified_date: 2026-06-11 20:30
 ---
 
 # 📡 Guia: Monitoramento com Netwatch
@@ -45,7 +46,7 @@ Aqui você coloca o que deve acontecer quando a conexão for restabelecida.
 
 ## 🤖 3. Exemplo Prático: Notificação no Telegram
 
-Se você já seguiu o tutorial de [**Bot do Telegram**](https://soarespaullo.github.io/MikroTik/docs/automacao/bot-telegram/){: target="_blank" }, pode integrar o Netwatch para receber alertas no celular:
+Se você já seguiu o tutorial de [**Bot do Telegram**](https://soarespaullo.github.io/mikrotik/docs/automacao/bot-telegram/){: target="_blank" }, pode integrar o Netwatch para receber alertas no celular:
 
 **Na aba Down:**
 
@@ -73,4 +74,4 @@ Não monitore um IP que pode bloquear pings ou que seja instável por natureza. 
 
 
 {: .tip }
-> **Uso Avançado:** O Netwatch é muito usado em cenários de [**Failover**](https://soarespaullo.github.io/MikroTik/docs/redes/failover/){: target="_blank" }, onde ele desativa uma rota principal (`/ip route disable [find comment="rota1"]`) quando o link cai, forçando o roteador a usar o link reserva.
+> **Uso Avançado:** O Netwatch é muito usado em cenários de [**Failover**](https://soarespaullo.github.io/mikrotik/docs/redes/failover/){: target="_blank" }, onde ele desativa uma rota principal (`/ip route disable [find comment="rota1"]`) quando o link cai, forçando o roteador a usar o link reserva.

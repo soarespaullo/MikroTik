@@ -3,6 +3,7 @@ layout: default
 title: "💾 Scripts de Backup"
 parent: "🛠️ Manutenção"
 nav_order: 1
+last_modified_date: 2026-06-13 07:15
 ---
 
 # 💾 Guia: Backup MikroTik (RouterOS v7)
@@ -67,8 +68,7 @@ O arquivo aparecerá na lista `Files` pronto para **DOWNLOAD**.
 
 ---
 
-🤖 4. Automação: Backup por E-mail (Script v7)
------------------------------------------------
+## 🤖 4. Automação: Backup por E-mail (Script v7)
 
 Este script gera o backup (`.rsc`) e envia por *e-mail* com o status completo: **IP (WAN/PPPoE), Uptime formatado, Modelo da RB e Versão**.
 
@@ -86,8 +86,8 @@ Este script gera o backup (`.rsc`) e envia por *e-mail* com o status completo: *
 
 Escolha a forma mais adequada para obter o código-fonte ou inspecionar o arquivo direto no repositório:
 
-[**📥 Baixar Arquivo (.rsc)**](https://raw.githubusercontent.com/soarespaullo/MikroTik/main/scripts/Bk-Mail.rsc){: .btn .btn-blue target="_blank" }
-[**👁️ Visualizar Código no GitHub**](https://github.com/soarespaullo/MikroTik/blob/main/scripts/Bk-Mail.rsc){: .btn .btn-outline target="_blank" }
+[**📥 Baixar Arquivo (.rsc)**](https://raw.githubusercontent.com/soarespaullo/mikrotik/main/scripts/Bk-Mail.rsc){: .btn .btn-blue target="_blank" }
+[**👁️ Visualizar Código no GitHub**](https://github.com/soarespaullo/mikrotik/blob/main/scripts/Bk-Mail.rsc){: .btn .btn-outline target="_blank" }
 
 ---
 
@@ -97,18 +97,17 @@ Para que o script rode sozinho (ex: `toda madrugada`), precisamos de um agendame
 
 1.  Vá em **System → Scheduler** e clique em **+**.
 
-    -   **Comment:** Backup MikroTik: Export .rsc via E-mail.
+    *   **Comment:** Backup MikroTik: Export .rsc via E-mail.
 
-    -   **Name:** `Sched-Bk-Mail`.
+    *   **Name:** `Sched-Bk-Mail`.
 
-    -   **Start Time:** `03:00:00`.
+    *   **Start Time:** `03:00:00`.
 
-    -   **Interval:** `1d 00:00:00` (Executa uma vez por dia).
+    *   **Interval:** `1d 00:00:00` (Executa uma vez por dia).
 
-    -   **On Event:** Digite o nome exato do script: `Bk-Mail`.
+    *   **On Event:** Digite o nome exato do script: `Bk-Mail`.
 
-    -   **Policy:** `read`, `write`, `policy`, `test`, `sensitive`, `ftp` e `password`
+    *   **Policy:** `read`, `write`, `policy`, `test`, `sensitive`, `ftp` e `password`
 
 {: .important }
->
 > As permissões marcadas aqui no **Scheduler** devem ser **exatamente as mesmas** que você marcou dentro do menu **System → Scripts**. Se o agendador tiver menos permissões que o script, o backup retornará o erro "`not enough permissions`".

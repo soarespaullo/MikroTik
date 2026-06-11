@@ -3,6 +3,7 @@ layout: default
 title: 🔄 Failover (Netwatch)
 parent: 📡 Redes & Links
 nav_order: 1
+last_modified_date: 2026-06-08 23:05
 ---
 
 # 🔄 Guia: Failover com Netwatch (Redundância de Links)

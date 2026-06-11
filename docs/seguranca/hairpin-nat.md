@@ -3,6 +3,7 @@ layout: default
 title: "🔄 Hairpin NAT (Acesso Interno)"
 parent: "🔒 Segurança & Acesso"
 nav_order: 8
+last_modified_date: 2026-06-08 21:15
 ---
 
 # 📖 Guia: Hairpin NAT (Acesso Interno via DDNS/IP Público)

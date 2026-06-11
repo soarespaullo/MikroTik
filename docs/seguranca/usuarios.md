@@ -3,6 +3,7 @@ layout: default
 title: "👤 Gerenciamento de Usuários"
 parent: "🔒 Segurança & Acesso"
 nav_order: 12
+last_modified_date: 2026-06-10 23:17
 ---
 
 # 👤 Guia: Gerenciamento de Usuários

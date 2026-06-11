@@ -3,6 +3,7 @@ layout: default
 title: 🌐 PPPoE Cliente/Server
 parent: 📡 Redes & Links
 nav_order: 2
+last_modified_date: 2026-06-10 23:20
 ---
 
 # 🌐 Guia: PPPoE Client e PPPoE Server

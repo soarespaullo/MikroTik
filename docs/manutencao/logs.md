@@ -3,6 +3,7 @@ layout: default
 title: "📝 Análise de Logs"
 parent: "🛠️ Manutenção"
 nav_order: 2
+last_modified_date: 2026-06-13 18:15
 ---
 
 # 📝 Guia: Análise e Gerenciamento de Logs
@@ -51,7 +52,8 @@ Se você deseja monitorar apenas eventos de **PPPoE** e **Scripts**:
 Você pode criar um script que monitora o `log` e te avisa no `Telegram` quando algo específico acontece.
 
 **Exemplo de lógica para o Terminal:**
-```
+
+```bash
 :foreach i in=[/log find message~"login failure"] do={
     :local logMsg [/log get $i message]
     /tool fetch url="[https://api.telegram.org/bot](https://api.telegram.org/bot)<TOKEN>/sendMessage?chat_id=<ID>&text=Tentativa de Invasao: $logMsg" keep-result=no check-certificate=no

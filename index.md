@@ -91,4 +91,4 @@ Para facilitar o dia a dia na operação da rede, utilize os canais oficiais da 
 ---
 
 {: .note }
-> Esta Wiki é mantida pela **Equipe de Rede** sob coordenação de [**Paulo Soares**](https://soarespaullo.github.io){: target="_blank" }. O código-fonte e as atualizações podem ser acompanhados diretamente no [**GitHub**](https://github.com/soarespaullo/MikroTik/){: target="_blank" }.
+> Esta Wiki é mantida pela **Equipe de Rede** sob coordenação de [**Paulo Soares**](https://soarespaullo.github.io){: target="_blank" }. O código-fonte e as atualizações podem ser acompanhados diretamente no [**GitHub**](https://github.com/soarespaullo/mikrotik/){: target="_blank" }.

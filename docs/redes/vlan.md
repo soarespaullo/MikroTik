@@ -3,6 +3,7 @@ layout: default
 title: 🌈 VLAN
 parent: 📡 Redes & Links
 nav_order: 6
+last_modified_date: 2026-06-12 23:00
 ---
 
 # 🌈 Guia: Configuração de VLAN

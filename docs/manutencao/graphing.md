@@ -3,6 +3,7 @@ layout: default
 title: "📈 Graphing (Monitoramento Web)"
 parent: "🛠️ Manutenção"
 nav_order: 8
+last_modified_date: 2026-06-10 19:55
 ---
 
 # 📈 Guia: Graphing (Monitoramento Web)
@@ -36,7 +37,7 @@ O **Graphing** permite que você visualize o histórico de consumo de tráfego, 
     *   Abra o seu navegador e digite o `IP` da sua `RB` seguido de `/graphs` (Ex: `http://10.220.0.1/graphs`).
 
 {: .important }
-> Se você alterou a porta padrão do serviço **WWW** (em [**IP → Services**](https://soarespaullo.github.io/MikroTik/docs/seguranca/bloqueio-servicos/){: target="_blank" }), você deve incluí-la no endereço de acesso.
+> Se você alterou a porta padrão do serviço **WWW** (em [**IP → Services**](https://soarespaullo.github.io/mikrotik/docs/seguranca/bloqueio-servicos/){: target="_blank" }), você deve incluí-la no endereço de acesso.
 
 *   **Porta padrão (80):** `http://10.220.0.1/graphs`
 
